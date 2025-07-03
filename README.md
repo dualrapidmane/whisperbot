@@ -1,0 +1,2 @@
+# whisperbot
+discord bot
