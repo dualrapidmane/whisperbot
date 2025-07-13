@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Whisper Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #0d1117;
+      --accent: #5865f2;
+      --text-light: #c9d1d9;
+      --card-bg: #161b22;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--main-bg);
+      color: var(--text-light);
+    }
+    header {
+      background: linear-gradient(135deg, #1e1e2f, #12141c);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header img {
+      width: 120px;
+      border-radius: 1rem;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin: 1rem 0 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background: #4752d3;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+    ul.features {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    ul.features li {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .commands-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card-bg);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .commands-table th, .commands-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #333;
+    }
+    .commands-table th {
+      background: #20262e;
+    }
+    footer {
+      background: #0a0f1a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: var(--accent);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        width: 100%;
+        display: inline-block;
+      }
+      .commands-table th, .commands-table td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="The Whisper Bot Logo">
+    <h1>The Whisper Bot</h1>
+    <p>the only bot you will need</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=1339152375151329355&permissions=8&integration_type=0&scope=bot" class="btn">Invite to Server</a>
+  </header>
+
+  <section>
+    <h2>Features</h2>
+    <ul class="features">
+      <li><strong>AutoMod</strong><br>Automatic moderation for spam, links, and more</li>
+      <li><strong>Anti-Nuke</strong><br>Protects your server from mass bans and raids</li>
+      <li><strong>Staff Overwatch</strong><br>Logs and monitors staff actions</li>
+      <li><strong>Games & Trivia</strong><br>Keep your server entertained</li>
+      <li><strong>Anonymous Messages</strong><br>Let users speak freely without being known</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Commands</h2>
+    <table class="commands-table">
+      <thead>
+        <tr><th>Command</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>/message</td><td>Send an anonymous message</td></tr>
+        <tr><td>/echo</td><td>Bot repeats your message</td></tr>
+        <tr><td>/mock</td><td>Mock someone's text for fun</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>Need help or want to report a bug? Join our <a href="https://discord.gg/bZ8vmn24">Support Server</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The Whisper Bot. All rights reserved.</p>
+  </footer>
+</body>
+</html>
